@@ -10,6 +10,11 @@
     align-items: center;
   }
 
+  &.cart {
+    color: rgb(153,165,204);
+    font-weight: bold;
+  }
+
   &.input-block {
     background-color: rgb(242,242,242);
     padding: 0.2rem;

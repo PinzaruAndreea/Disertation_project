@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.homepage{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &.image {
+    width: 95vw;
+   filter: grayscale(rgba(153,165,204,1));
+  }
+  .button {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    border: 0;
+    font-weight: bolder;
+    padding: 0.6rem 1.5rem;
+    border-radius: 1px;
+    cursor: pointer;
+    box-shadow: black;
+  }
+
+  .button:hover {
+    background-color: rgba(153,165,204,1);
+    color: white;
+  }
+}
