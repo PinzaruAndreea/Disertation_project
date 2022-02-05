@@ -1,0 +1,33 @@
+.image-logo {
+  height: 6rem;
+  width: 6rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  &.navigation-bar {
+    align-items: center;
+  }
+
+  &.input-block {
+    background-color: rgb(242,242,242);
+    padding: 0.2rem;
+    &.input {
+      border: none;
+      padding: 0.2rem 1rem;
+    }
+    &.input::placeholder {
+      font-weight: bold;
+      color: rgb(153,165,204);
+    }
+    &.input:focus {
+      outline: none;
+    }
+    &.image {
+      height: 1rem;
+      width: 1rem;
+    }
+  }
+}
+
