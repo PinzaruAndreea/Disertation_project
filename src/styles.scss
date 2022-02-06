@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
-  margin: 0.2rem;
   font-family: 'Montserrat', sans-serif;
 }
 
-.footer-items {
+body {
+  position: fixed;
+  margin: 0;
+}
 
+.separator {
+  border-top: 1px solid black;
+}
+
+@media (min-width: 1025px) {
+  body {
+    position: static;
+  }
 }

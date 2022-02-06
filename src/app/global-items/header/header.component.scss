@@ -1,11 +1,24 @@
 .image-logo {
-  height: 6rem;
-  width: 6rem;
+  display: none;
+}
+
+.image-logo--mobile{
+  display: block;
+  height: 2rem;
+  width: 2rem;
+}
+
+.close-button {
+  position: absolute;
+  top:10px;
+  left: 90%;
+  z-index: 101;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin: 0.2rem;
   &.navigation-bar {
     align-items: center;
   }
@@ -18,6 +31,7 @@
   &.input-block {
     background-color: rgb(242,242,242);
     padding: 0.2rem;
+    border-radius: 2px;
     &.input {
       border: none;
       padding: 0.2rem 1rem;
@@ -33,6 +47,21 @@
       height: 1rem;
       width: 1rem;
     }
+  }
+}
+@media (min-width: 1025px) {
+  .image-logo{
+    display: block;
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+
+  .image-logo--mobile{
+    display: none;
   }
 }
 

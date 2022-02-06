@@ -2,6 +2,12 @@
   <div>
     <img class="image-logo" src="./assets/images/project_logo.png" alt="">
   </div>
+  <div class="header navigation-bar" (click)="toggleHamburgerMenu()">
+    <img class="image-logo--mobile" src="./assets/images/menu_icon.png" alt="">
+  </div>
+  <div class="" *ngIf="isHamburgerMenuOpen" (click)="toggleHamburgerMenu()">
+    <img class="image-logo--mobile close-button" src="./assets/images/close.png" alt="">
+  </div>
   <div class="header navigation-bar">
     <div class="header input-block">
       <input placeholder="Search All Products" class="header input-block input" type="text">
@@ -17,4 +23,4 @@
     </div>
   </div>
 </div>
-<app-navigation-bar></app-navigation-bar>
+<app-navigation-bar [isHamburgerMenuOpen]="isHamburgerMenuOpen"></app-navigation-bar>
